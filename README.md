@@ -1,55 +1,47 @@
-![Logo of the project](/docs/logo.sample.png)
+![Logo of the project](/docs/Monopoly_House.jpg)
 
-# Git Repository Template
-> A template repository that adheres to Entisys360's Git standards
+# 3D Git Demo
+> A simple Git demo using 3D CAD files to collaboratively build a house
 
-This repository is a template for initializing new git repositories or importing existing work.
+A demonstration Git repo using STL files to collaboratively build a 3D model 
+of a house using iterative change.
 
 
 ## Installing / Getting started
 
-Follow the official Github documentation for creating a new repository using this template.
+To get started simply clone this repository and import house.stl to the 
+3D CAD software of your choice.
 
-https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template
-
-
-## Style guide
-
-Git style and usage guidelines can be found in Entisys360's Microsoft Teams #Git channel.
-
-Explain any code style changes specific to this repository and show how to validate here.
-
-
-## Quick command reference / API reference
-
-Clone this repository
 ```shell
-git clone https://github.com/entisys360/git-template.git
+git clone https://github.com/entisys360/git-demo-3D.git
 ```
 
-Change directory into ./git-template
+### Prerequisites
 
-Checkout a new branch
+In order to modify the contents of this repository you will need software 
+capable of reading and modifying STL files.
+
+If you do not have 3D CAD software installed locally you can use resources
+from the web to make modifications. 
+I recommend https://www.tinkercad.com for editing in your browser.
+
+### Deploying / Publishing
+
+If importing the existing files results in a new or renamed file you must
+export and copy the new files back into place overwriting the original
+file that's been modified.
+
+Add the modified files to your checkout create a valid commit message and
+push those changes back to the Git server to publish.
+
 ```shell
-git checkout -b your_new_branch_name
+git add modified_files
+git commit -m "What changed and why"
+git push -u origin your_branch
 ```
 
-Add and/or modify files and directories
-```shell
-git add your_new_files
-```
+## Tests
 
-Commit your code often as you work
-```shell
-git commit -m "Add new file to introduce feature X"
-```
-
-Push your commits upstream to the Git server
-```shell
-git push --set-upstream origin your_branch_name
-```
-
-Create a pull request when your branch is ready to merge 
-
-https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
+Do your modifications still look like a house? Is your upgraded house better 
+than the house that came before it?
 
